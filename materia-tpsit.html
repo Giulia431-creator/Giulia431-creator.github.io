@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TPSIT — Giulia Cecconi</title>
+  <meta name="description" content="Approfondimento di TPSIT: sistemi concorrenti, applicazioni distribuite, sviluppo Android e la differenza tra concorrenza e parallelismo.">
+  <meta property="og:title" content="TPSIT — Giulia Cecconi">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigazione principale">
+      <a class="nav__brand" href="index.html">Giulia Cecconi</a>
+      <button class="nav__toggle" aria-label="Apri il menù" aria-expanded="false" aria-controls="nav-list">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="nav__list" id="nav-list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#chi-sono">Chi sono</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#passioni">Passioni</a></li>
+        <li class="nav__item"><a class="nav__link" href="materie.html" aria-current="page">Materie</a></li>
+        <li class="nav__item"><a class="nav__link" href="educazione-civica.html">Ed. Civica</a></li>
+        <li class="nav__item"><a class="nav__link" href="pcto.html">PCTO</a></li>
+        <li class="nav__item"><a class="nav__link" href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <a href="materie.html">Materie</a> / TPSIT</p>
+        <p class="eyebrow">Area scientifico-tecnica</p>
+        <h1>TPSIT</h1>
+        <p class="lead">Tecnologie e Progettazione di Sistemi Informatici e di Telecomunicazione</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose reveal">
+        <p>TPSIT mi ha permesso di approfondire il funzionamento dei sistemi concorrenti e delle applicazioni distribuite. Durante l’anno abbiamo studiato come più processi possono collaborare tra loro e come vengono gestite le risorse condivise all’interno di un sistema.</p>
+        <p>Una parte molto interessante è stata lo sviluppo di applicazioni Android, che ci ha fatto avvicinare al mondo mobile attraverso Android Studio e alla progettazione di interfacce moderne e dinamiche.</p>
+
+        <div class="pdf-embed">
+          <div class="pdf-embed__bar">
+            <span><i data-lucide="file-text" style="vertical-align:-4px"></i> Documento di gruppo: Concorrenza e Parallelismo (Gruppo 8 — Cecconi, Ion)</span>
+            <a class="btn btn--ghost" href="documenti/concorrenza-parallelismo.pdf" target="_blank" rel="noopener">Apri il PDF <i data-lucide="external-link"></i></a>
+          </div>
+          <iframe src="documenti/concorrenza-parallelismo.pdf" title="Documento PDF su concorrenza e parallelismo" loading="lazy"></iframe>
+        </div>
+
+        <h3>Concorrenza e Parallelismo</h3>
+        <p>La <strong>concorrenza</strong> e il <strong>parallelismo</strong> sono due concetti fondamentali dell'informatica che permettono di eseguire più attività contemporaneamente o apparentemente contemporaneamente, migliorando l'efficienza dei sistemi.</p>
+
+        <h4>Concorrenza</h4>
+        <p>La <strong>concorrenza</strong> si verifica quando più processi o thread avanzano nello stesso intervallo di tempo, condividendo le risorse del processore.</p>
+        <p>In un sistema con un solo processore, il sistema operativo alterna rapidamente l'esecuzione dei vari processi tramite il <strong>time sharing</strong>, dando l'impressione che vengano eseguiti contemporaneamente.</p>
+        <p><em>Esempio.</em> Mentre ascolti musica sul computer:</p>
+        <ul>
+          <li>il lettore musicale riproduce l'audio;</li>
+          <li>il browser carica una pagina web;</li>
+          <li>un programma scarica un file.</li>
+        </ul>
+        <p>Le attività non vengono necessariamente eseguite nello stesso istante, ma il processore passa velocemente dall'una all'altra.</p>
+        <p><strong>Problemi della concorrenza.</strong> Quando più processi accedono alle stesse risorse possono verificarsi:</p>
+        <ul>
+          <li><strong>Race condition</strong> (condizioni di competizione);</li>
+          <li>inconsistenza dei dati;</li>
+          <li>conflitti nell'accesso alle risorse condivise.</li>
+        </ul>
+        <p>Per evitarli si utilizzano meccanismi di sincronizzazione come:</p>
+        <ul>
+          <li>mutex;</li>
+          <li>semafori;</li>
+          <li>monitor.</li>
+        </ul>
+
+        <h4>Parallelismo</h4>
+        <p>Il <strong>parallelismo</strong> consiste nell'esecuzione reale di più attività nello stesso momento.</p>
+        <p>Avviene quando il sistema dispone di:</p>
+        <ul>
+          <li>più processori;</li>
+          <li>più core all'interno della CPU.</li>
+        </ul>
+        <p>Ogni core può eseguire un compito diverso contemporaneamente agli altri.</p>
+        <p><em>Esempio.</em> Un computer con processore quad-core può:</p>
+        <ul>
+          <li>elaborare un video;</li>
+          <li>eseguire un antivirus;</li>
+          <li>riprodurre musica;</li>
+          <li>navigare sul web;</li>
+        </ul>
+        <p>tutte queste attività realmente nello stesso istante.</p>
+
+        <h4>Differenza tra Concorrenza e Parallelismo</h4>
+        <div class="table-wrap">
+          <table class="data">
+            <thead>
+              <tr><th>Concorrenza</th><th>Parallelismo</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Più attività avanzano nello stesso periodo di tempo</td><td>Più attività vengono eseguite nello stesso momento</td></tr>
+              <tr><td>Può esistere anche con una sola CPU</td><td>Richiede più core o processori</td></tr>
+              <tr><td>Basata sull'alternanza dei processi</td><td>Basata sull'esecuzione simultanea</td></tr>
+              <tr><td>Migliora la gestione delle risorse</td><td>Migliora le prestazioni e la velocità</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Processi e Thread</h4>
+        <p>Per realizzare concorrenza e parallelismo si utilizzano:</p>
+        <p><strong>Processo</strong> — È un programma in esecuzione con memoria e risorse proprie.</p>
+        <p><strong>Thread</strong> — È un'unità di esecuzione interna a un processo.</p>
+        <p>Un processo può contenere più thread che lavorano contemporaneamente e condividono la stessa memoria.</p>
+
+        <h4>Applicazioni</h4>
+        <p>Concorrenza e parallelismo sono utilizzati in:</p>
+        <ul>
+          <li>sistemi operativi;</li>
+          <li>server web;</li>
+          <li>videogiochi;</li>
+          <li>elaborazione di immagini e video;</li>
+          <li>applicazioni distribuite;</li>
+          <li>intelligenza artificiale;</li>
+          <li>cloud computing.</li>
+        </ul>
+
+        <div class="callout">
+          <h4>In sintesi</h4>
+          <p>La <strong>concorrenza</strong> permette a più attività di progredire contemporaneamente attraverso l'alternanza dell'esecuzione, mentre il <strong>parallelismo</strong> consente l'esecuzione reale simultanea di più attività grazie alla presenza di più core o processori. Entrambi sono fondamentali per migliorare l'efficienza, la reattività e le prestazioni dei moderni sistemi informatici.</p>
+        </div>
+
+        <p><a href="materie.html">← Torna alle materie</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <p class="footer-brand">Giulia Cecconi</p>
+        <p>Studentessa di Informatica all'IIS "Marconi Pieralisi" di Jesi. Sito personale realizzato come progetto conclusivo del percorso di studi.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/giuliacecconiii" target="_blank" rel="noopener" aria-label="Profilo Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://github.com/Giulia431-creator" target="_blank" rel="noopener" aria-label="Profilo GitHub"><i data-lucide="github"></i></a>
+          <a href="mailto:giulia.cecconi07@icloud.com" aria-label="Invia una email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Link rapidi</h4>
+        <ul>
+          <li><a href="index.html#chi-sono">Chi sono</a></li>
+          <li><a href="index.html#passioni">Passioni</a></li>
+          <li><a href="materie.html">Materie</a></li>
+          <li><a href="educazione-civica.html">Educazione Civica</a></li>
+          <li><a href="pcto.html">PCTO</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:giulia.cecconi07@icloud.com">giulia.cecconi07@icloud.com</a></li>
+          <li><a href="tel:+393485394217">+39 348 5394217</a></li>
+          <li><a href="contatti.html">Tutti i contatti →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Giulia Cecconi — Esame di Stato, A.S. 2025/2026.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

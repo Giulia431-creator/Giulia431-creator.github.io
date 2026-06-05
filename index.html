@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giulia Cecconi — Sito personale</title>
+  <meta name="description" content="Sito personale di Giulia Cecconi, studentessa di Informatica all'IIS Marconi Pieralisi di Jesi: chi sono, percorso di studi, passioni e obiettivi.">
+  <meta property="og:title" content="Giulia Cecconi — Sito personale">
+  <meta property="og:description" content="Scuola, esperienze, sport e passioni: il sito personale di Giulia Cecconi, studentessa di Informatica a Jesi.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <!-- ======================= HEADER / NAV ======================= -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigazione principale">
+      <a class="nav__brand" href="index.html">Giulia Cecconi</a>
+      <button class="nav__toggle" aria-label="Apri il menù" aria-expanded="false" aria-controls="nav-list">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="nav__list" id="nav-list">
+        <li class="nav__item"><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#chi-sono">Chi sono</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#passioni">Passioni</a></li>
+        <li class="nav__item"><a class="nav__link" href="materie.html">Materie</a></li>
+        <li class="nav__item"><a class="nav__link" href="educazione-civica.html">Ed. Civica</a></li>
+        <li class="nav__item"><a class="nav__link" href="pcto.html">PCTO</a></li>
+        <li class="nav__item"><a class="nav__link" href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ======================= HERO (#home) ======================= -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div>
+          <p class="eyebrow">IIS "Marconi Pieralisi" — Jesi</p>
+          <h1>Giulia Cecconi</h1>
+          <p class="lead">Studentessa di Informatica — IIS "Marconi Pieralisi", Jesi</p>
+          <p class="hero__welcome">Scuola, esperienze, sport, passioni e obiettivi: questo sito racconta un po’ chi sono oggi e chi vorrei diventare domani.</p>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="#chi-sono">Scopri di più <i data-lucide="arrow-down"></i></a>
+            <a class="btn btn--ghost" href="materie.html">materie <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Placeholder grafico: foto profilo da inserire in un secondo momento -->
+        <div class="monogram" aria-hidden="true">
+          <span>GC</span>
+          <small>Giulia Cecconi</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CHI SONO (#chi-sono) ======================= -->
+    <section class="section section--surface" id="chi-sono">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Chi sono</p>
+          <h2>Un po’ di me</h2>
+        </div>
+
+        <div class="feature reveal">
+          <div class="feature__text">
+            <h3>Presentazione</h3>
+            <p>Ho 19 anni, vivo a Santa Maria Nuova e frequento il quinto anno dell’IIS “Marconi Pieralisi” di Jesi, indirizzo Informatica.</p>
+            <p>Mi considero una persona determinata, curiosa e molto attiva: faccio fatica a stare ferma e ho sempre bisogno di avere nuovi obiettivi da raggiungere. Nel tempo ho imparato ad affrontare situazioni difficili con carattere e costanza, qualità che oggi porto sia nello studio sia nella vita quotidiana.</p>
+            <p>Per me contano molto le persone che mi stanno accanto: la mia famiglia, gli amici più stretti e tutte le persone che in questi anni mi hanno aiutata a crescere. Cerco sempre di dare il massimo in quello che faccio, anche quando significa uscire dalla mia zona di comfort.</p>
+          </div>
+          <div class="feature__media">
+            <img src="immagini/fotoScuola.jpg" alt="L'istituto IIS Marconi Pieralisi di Jesi frequentato da Giulia" loading="lazy">
+          </div>
+        </div>
+
+        <div class="feature reveal">
+          <div class="feature__text">
+            <h3>Il mio percorso di studi</h3>
+            <p>Dopo le scuole medie ho scelto l’indirizzo Informatica perché mi incuriosiva il mondo della tecnologia e volevo una scuola che mi permettesse di imparare cose pratiche oltre alla teoria. In questi cinque anni ho studiato programmazione, reti, database e sviluppo software, imparando non solo competenze tecniche ma anche il valore del lavoro di squadra e dell’organizzazione.</p>
+            <p>L’informatica mi ha insegnato soprattutto ad affrontare i problemi con logica e pazienza: spesso dietro a un errore si nasconde una soluzione che va cercata con calma e metodo.</p>
+            <p><a href="materie.html">Scopri le materie del mio percorso →</a></p>
+          </div>
+          <div class="feature__media">
+            <div class="media-placeholder" role="img" aria-label="Sezione dedicata al percorso di studi">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature feature--reverse reveal">
+          <div class="feature__text">
+            <h3>Uno sguardo al futuro</h3>
+            <p>Dopo il diploma vorrei entrare nell’Arma dei Carabinieri e continuare il mio percorso cercando di diventare maresciallo. È un obiettivo che sento molto mio perché unisce disciplina, responsabilità e spirito di servizio.</p>
+            <p>Allo stesso tempo voglio continuare a crescere personalmente, imparare nuove cose e mettermi alla prova in contesti diversi. Credo che ogni esperienza, anche piccola, possa insegnare qualcosa di importante.</p>
+          </div>
+          <div class="feature__media">
+            <img src="immagini/carabinieri.jpg" alt="Immagine legata all'obiettivo di Giulia di entrare nell'Arma dei Carabinieri" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PASSIONI (#passioni) ======================= -->
+    <section class="section" id="passioni">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Passioni</p>
+          <h2>Ciò che mi fa stare bene</h2>
+          <p class="lead">Oltre allo studio, ci sono attività ed esperienze che hanno avuto un ruolo importante nella mia crescita: lo sport, la fotografia, i viaggi e il lavoro.</p>
+        </div>
+
+        <!-- Pattinaggio -->
+        <div class="feature reveal">
+          <div class="feature__media">
+            <img src="immagini/pattinaggio1.jpg" alt="Giulia durante una gara di pattinaggio corsa" loading="lazy">
+          </div>
+          <div class="feature__text">
+            <h3>Pattinaggio</h3>
+            <p>Per me lo sport non è mai stato solo allenamento. Per molti anni ho praticato pattinaggio corsa a livello agonistico, uno sport che ha occupato gran parte della mia crescita e che mi ha insegnato molto più di quanto immaginassi. Gare, allenamenti, viaggi ogni fine settimana e il rapporto continuo con la squadra mi hanno fatto capire il valore della disciplina, della costanza e del sacrificio.</p>
+            <p>Non è stato sempre semplice conciliare scuola, vita personale e sport, soprattutto nei periodi più impegnativi, ma proprio queste difficoltà mi hanno aiutata a maturare. Il pattinaggio mi ha insegnato ad affrontare le pressioni, a rialzarmi dopo le delusioni e a vivere ogni traguardo con più consapevolezza. Ancora oggi porto con me il modo di vedere la vita che questo sport mi ha lasciato: imparare a resistere nella fatica, senza smettere di andare avanti.</p>
+          </div>
+        </div>
+
+        <!-- Fotografia -->
+        <div class="feature feature--reverse reveal">
+          <div class="feature__media">
+            <div class="media-placeholder" role="img" aria-label="Passione per la fotografia">
+              <i data-lucide="camera"></i>
+            </div>
+          </div>
+          <div class="feature__text">
+            <h3>Fotografia</h3>
+            <p>La fotografia è una passione nata quasi per caso e diventata col tempo qualcosa di molto importante per me. Mi piace catturare momenti spontanei, dettagli e atmosfere che spesso passano inosservati.</p>
+            <p>Da quando ho iniziato a usare la macchina fotografica con più serietà, ho imparato a osservare le cose in modo diverso e a dare più attenzione ai particolari. Fotografare per me significa conservare emozioni e raccontare storie senza usare parole.</p>
+            <p>Con il tempo questa passione mi ha portata a diventare anche la fotografa della squadra di calcio del mio paese. È stato strano e bellissimo allo stesso tempo: per anni ho passato i sabati in tribuna a guardare mio fratello e i miei amici giocare, mentre oggi mi ritrovo direttamente a bordo campo a raccontare quei momenti attraverso le mie fotografie. In qualche modo, senza accorgermene, sono passata dall’essere spettatrice a far parte anch’io di ciò che succede in campo.</p>
+          </div>
+        </div>
+
+        <!-- Viaggi -->
+        <div class="feature reveal">
+          <div class="feature__media">
+            <img src="immagini/fotoIrlanda.jpg" alt="Paesaggio dell'Irlanda fotografato da Giulia durante l'esperienza Erasmus" loading="lazy">
+          </div>
+          <div class="feature__text">
+            <h3>Viaggi</h3>
+            <p>Mi piace vivere esperienze nuove e uscire dalla mia zona di comfort, soprattutto quando significano crescere e mettermi alla prova. L’estate scorsa ho partecipato a un progetto Erasmus in Irlanda insieme alla scuola, vivendo lì per un mese. È stata una delle esperienze più importanti della mia vita, perché per la prima volta mi sono ritrovata davvero da sola, lontana da casa, dalle abitudini e dalle persone a cui ero abituata.</p>
+            <p>All’inizio non è stato semplice, ma proprio questo mi ha aiutata a cambiare tanto. Quell’esperienza mi ha insegnato a essere più indipendente, ad adattarmi alle situazioni nuove e a dare valore a cose che spesso si danno per scontate, come gli affetti, il tempo condiviso e la capacità di cavarsela da soli. Tornare a casa dopo quel mese significava essere la stessa persona, ma con uno sguardo completamente diverso sulla vita e su me stessa.</p>
+          </div>
+        </div>
+
+        <!-- Barista -->
+        <div class="feature feature--reverse reveal">
+          <div class="feature__media">
+            <div class="media-placeholder" role="img" aria-label="Esperienza di lavoro come barista">
+              <i data-lucide="coffee"></i>
+            </div>
+          </div>
+          <div class="feature__text">
+            <h3>Barista</h3>
+            <p>Da qualche tempo lavoro come barista presso il circolo del mio paese. Questa esperienza mi ha insegnato a relazionarmi con persone molto diverse tra loro, a gestire situazioni impreviste e a lavorare con responsabilità anche nei momenti più impegnativi.</p>
+            <p>Stare dietro al bancone significa molto più che servire un caffè: significa ascoltare, comunicare, collaborare con gli altri e imparare a mantenere la calma anche quando il locale è pieno. È un'esperienza che mi ha aiutata a diventare più sicura di me stessa e più autonoma.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <p class="footer-brand">Giulia Cecconi</p>
+        <p>Studentessa di Informatica all'IIS "Marconi Pieralisi" di Jesi. Sito personale realizzato come progetto conclusivo del percorso di studi.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/giuliacecconiii" target="_blank" rel="noopener" aria-label="Profilo Instagram">
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="https://github.com/Giulia431-creator" target="_blank" rel="noopener" aria-label="Profilo GitHub">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="mailto:giulia.cecconi07@icloud.com" aria-label="Invia una email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Link rapidi</h4>
+        <ul>
+          <li><a href="index.html#chi-sono">Chi sono</a></li>
+          <li><a href="index.html#passioni">Passioni</a></li>
+          <li><a href="materie.html">Materie</a></li>
+          <li><a href="educazione-civica.html">Educazione Civica</a></li>
+          <li><a href="pcto.html">PCTO</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:giulia.cecconi07@icloud.com">giulia.cecconi07@icloud.com</a></li>
+          <li><a href="tel:+393485394217">+39 348 5394217</a></li>
+          <li><a href="contatti.html">Tutti i contatti →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Giulia Cecconi — Esame di Stato, A.S. 2025/2026.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informatica — Giulia Cecconi</title>
+  <meta name="description" content="Approfondimento di Informatica: sviluppo web, parte teorica e protocolli HTTP e HTTPS, con la differenza tra i due protocolli.">
+  <meta property="og:title" content="Informatica — Giulia Cecconi">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigazione principale">
+      <a class="nav__brand" href="index.html">Giulia Cecconi</a>
+      <button class="nav__toggle" aria-label="Apri il menù" aria-expanded="false" aria-controls="nav-list">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="nav__list" id="nav-list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#chi-sono">Chi sono</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#passioni">Passioni</a></li>
+        <li class="nav__item"><a class="nav__link" href="materie.html" aria-current="page">Materie</a></li>
+        <li class="nav__item"><a class="nav__link" href="educazione-civica.html">Ed. Civica</a></li>
+        <li class="nav__item"><a class="nav__link" href="pcto.html">PCTO</a></li>
+        <li class="nav__item"><a class="nav__link" href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <a href="materie.html">Materie</a> / Informatica</p>
+        <p class="eyebrow">Area scientifico-tecnica</p>
+        <h1>Informatica</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose reveal">
+        <p>L’Informatica è stata la materia che più ha rappresentato il percorso che ho scelto alle superiori. Durante il quinto anno abbiamo approfondito lo sviluppo di applicazioni web, lavorando sia sulla parte frontend sia sulla comunicazione con database e servizi backend. Quando ho scelto questo indirizzo ero convinta che la programmazione sarebbe stata l'aspetto che mi avrebbe appassionata di più. Con il tempo, però, ho scoperto di essere particolarmente interessata alla parte teorica, perché permette di comprendere ciò che avviene dietro le tecnologie che utilizziamo ogni giorno. Un esempio è lo studio dei protocolli HTTP e HTTPS: capire come avviene la comunicazione tra client e server e come vengono protetti i dati durante la navigazione mi ha fatto apprezzare ancora di più il funzionamento del web. Oltre agli aspetti tecnici, questa materia mi ha insegnato anche a lavorare in gruppo, confrontarmi con gli altri e organizzare un progetto in modo concreto, proprio come avviene in un vero team di sviluppo.</p>
+
+        <h3>HTTP (HyperText Transfer Protocol)</h3>
+        <p>HTTP è il protocollo di comunicazione utilizzato per trasferire pagine web e dati tra un client (ad esempio un browser) e un server web.</p>
+        <p>Quando scrivi un indirizzo web nel browser:</p>
+        <ul>
+          <li>Il browser invia una richiesta HTTP al server.</li>
+          <li>Il server elabora la richiesta.</li>
+          <li>Il server invia una risposta HTTP al browser.</li>
+          <li>Il browser visualizza il contenuto ricevuto.</li>
+        </ul>
+        <h4>Caratteristiche principali</h4>
+        <ul>
+          <li>È un protocollo del livello applicazione.</li>
+          <li>Utilizza normalmente il protocollo TCP per la trasmissione dei dati.</li>
+          <li>È stateless (senza stato): ogni richiesta è indipendente dalle precedenti.</li>
+          <li>Per mantenere informazioni tra una richiesta e l'altra si usano cookie, sessioni o token.</li>
+        </ul>
+        <h4>Struttura di una richiesta HTTP</h4>
+        <p>Una richiesta contiene:</p>
+        <ul>
+          <li>Metodo: indica l'operazione da eseguire.</li>
+        </ul>
+        <p>I più importanti sono:</p>
+        <ul>
+          <li>GET → richiede dati al server.</li>
+          <li>POST → invia dati al server.</li>
+          <li>PUT → modifica o sostituisce una risorsa.</li>
+          <li>DELETE → elimina una risorsa.</li>
+        </ul>
+
+        <h3>HTTPS (HyperText Transfer Protocol Secure)</h3>
+        <p>HTTPS è la versione sicura di HTTP. Permette la comunicazione tra client (browser) e server web proteggendo i dati scambiati tramite crittografia.</p>
+        <p>Quando un utente visita un sito HTTPS:</p>
+        <ul>
+          <li>Il browser si collega al server.</li>
+          <li>Viene stabilita una connessione sicura tramite TLS/SSL.</li>
+          <li>I dati vengono cifrati.</li>
+          <li>Client e server comunicano in modo protetto.</li>
+        </ul>
+        <p>HTTPS garantisce:</p>
+        <ul>
+          <li>Riservatezza (Confidentiality): i dati vengono crittografati e non possono essere letti da terzi.</li>
+          <li>Integrità (Integrity): i dati non possono essere modificati durante la trasmissione senza che ciò venga rilevato.</li>
+          <li>Autenticazione (Authentication): permette di verificare che il sito visitato sia realmente quello desiderato.</li>
+        </ul>
+        <p>HTTPS utilizza:</p>
+        <ul>
+          <li>HTTP per lo scambio delle informazioni.</li>
+          <li>TLS (Transport Layer Security) per la sicurezza.</li>
+        </ul>
+        <p>Prima dello scambio dei dati avviene il TLS Handshake:</p>
+        <ul>
+          <li>Il client contatta il server.</li>
+          <li>Il browser verifica il certificato.</li>
+          <li>Client e server concordano una chiave di cifratura.</li>
+          <li>Inizia la comunicazione protetta.</li>
+        </ul>
+        <h4>Vantaggi di HTTPS</h4>
+        <ul>
+          <li>Protezione delle password.</li>
+          <li>Protezione dei dati personali.</li>
+          <li>Maggiore fiducia degli utenti.</li>
+          <li>Migliore sicurezza per acquisti online e servizi bancari.</li>
+          <li>Migliore indicizzazione nei motori di ricerca.</li>
+        </ul>
+
+        <div class="table-wrap">
+          <table class="data">
+            <thead>
+              <tr><th>HTTP</th><th>HTTPS</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Dati in chiaro</td><td>Dati crittografati</td></tr>
+              <tr><td>Meno sicuro</td><td>Più sicuro</td></tr>
+              <tr><td>Porta 80</td><td>Porta 443</td></tr>
+              <tr><td>Nessun certificato</td><td>Certificato digitale</td></tr>
+              <tr><td>Vulnerabile ad intercettazioni</td><td>Protegge da intercettazioni</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p><a href="materie.html">← Torna alle materie</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <p class="footer-brand">Giulia Cecconi</p>
+        <p>Studentessa di Informatica all'IIS "Marconi Pieralisi" di Jesi. Sito personale realizzato come progetto conclusivo del percorso di studi.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/giuliacecconiii" target="_blank" rel="noopener" aria-label="Profilo Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://github.com/Giulia431-creator" target="_blank" rel="noopener" aria-label="Profilo GitHub"><i data-lucide="github"></i></a>
+          <a href="mailto:giulia.cecconi07@icloud.com" aria-label="Invia una email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Link rapidi</h4>
+        <ul>
+          <li><a href="index.html#chi-sono">Chi sono</a></li>
+          <li><a href="index.html#passioni">Passioni</a></li>
+          <li><a href="materie.html">Materie</a></li>
+          <li><a href="educazione-civica.html">Educazione Civica</a></li>
+          <li><a href="pcto.html">PCTO</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:giulia.cecconi07@icloud.com">giulia.cecconi07@icloud.com</a></li>
+          <li><a href="tel:+393485394217">+39 348 5394217</a></li>
+          <li><a href="contatti.html">Tutti i contatti →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Giulia Cecconi — Esame di Stato, A.S. 2025/2026.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemi e Reti — Giulia Cecconi</title>
+  <meta name="description" content="Approfondimento di Sistemi e Reti: infrastruttura di rete, sicurezza, firma digitale e certificati digitali, con Cisco Packet Tracer.">
+  <meta property="og:title" content="Sistemi e Reti — Giulia Cecconi">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigazione principale">
+      <a class="nav__brand" href="index.html">Giulia Cecconi</a>
+      <button class="nav__toggle" aria-label="Apri il menù" aria-expanded="false" aria-controls="nav-list">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="nav__list" id="nav-list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#chi-sono">Chi sono</a></li>
+        <li class="nav__item"><a class="nav__link" href="index.html#passioni">Passioni</a></li>
+        <li class="nav__item"><a class="nav__link" href="materie.html" aria-current="page">Materie</a></li>
+        <li class="nav__item"><a class="nav__link" href="educazione-civica.html">Ed. Civica</a></li>
+        <li class="nav__item"><a class="nav__link" href="pcto.html">PCTO</a></li>
+        <li class="nav__item"><a class="nav__link" href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <a href="materie.html">Materie</a> / Sistemi e Reti</p>
+        <p class="eyebrow">Area scientifico-tecnica</p>
+        <h1>Sistemi e Reti</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose reveal">
+        <p>Sistemi e Reti è stata una delle scoperte più piacevoli del mio percorso scolastico. Quando ho iniziato questo indirizzo non immaginavo che sarebbe diventata una delle materie che ho apprezzato di più, sia dal punto di vista teorico sia da quello pratico. Mi ha affascinato comprendere come funziona l'infrastruttura che rende possibile la comunicazione tra dispositivi, dalle reti locali fino a Internet, approfondendo temi come protocolli, sicurezza informatica e trasmissione dei dati. Allo stesso tempo ho trovato molto stimolanti le attività pratiche svolte con Cisco Packet Tracer, che ci hanno permesso di progettare e configurare reti simulando situazioni reali. Questa combinazione tra teoria e laboratorio mi ha aiutata a comprendere concretamente concetti che inizialmente sembravano molto complessi.</p>
+
+        <div class="pdf-embed">
+          <div class="pdf-embed__bar">
+            <span><i data-lucide="file-text" style="vertical-align:-4px"></i> Documento: Firma Digitale (Cecconi - Ion)</span>
+            <a class="btn btn--ghost" href="documenti/firma-digitale.pdf" target="_blank" rel="noopener">Apri il PDF <i data-lucide="external-link"></i></a>
+          </div>
+          <iframe src="documenti/firma-digitale.pdf" title="Documento PDF sulla firma digitale" loading="lazy"></iframe>
+        </div>
+
+        <h3>Firma Digitale</h3>
+        <p>La <strong>firma digitale</strong> è uno strumento informatico che permette di garantire l'autenticità e l'integrità di un documento digitale.</p>
+        <p>Ha lo stesso valore legale di una firma autografa (se conforme alla normativa vigente) e serve a dimostrare:</p>
+        <ul>
+          <li><strong>chi ha firmato</strong> il documento;</li>
+          <li>che il documento <strong>non è stato modificato</strong> dopo la firma;</li>
+          <li>che il firmatario <strong>non può negare</strong> di averlo firmato (non ripudio).</li>
+        </ul>
+        <h4>Come funziona</h4>
+        <p>La firma digitale utilizza la <strong>crittografia asimmetrica</strong>, basata su due chiavi:</p>
+        <ul>
+          <li><strong>Chiave privata</strong> → conosciuta solo dal proprietario e usata per firmare.</li>
+          <li><strong>Chiave pubblica</strong> → disponibile a tutti e usata per verificare la firma.</li>
+        </ul>
+        <p>Quando una persona firma un documento:</p>
+        <ol>
+          <li>Viene generata l'impronta digitale (hash) del documento.</li>
+          <li>L'hash viene cifrato con la chiave privata.</li>
+          <li>Si ottiene la firma digitale.</li>
+          <li>Chi riceve il documento usa la chiave pubblica per verificare la firma.</li>
+        </ol>
+        <p>Se il documento viene modificato anche di una sola lettera, la verifica fallisce.</p>
+        <h4>Vantaggi</h4>
+        <ul>
+          <li>Sicurezza</li>
+          <li>Validità legale</li>
+          <li>Integrità dei documenti</li>
+          <li>Riduzione dell'uso della carta</li>
+          <li>Rapidità nelle procedure amministrative</li>
+        </ul>
+
+        <h3>Certificati Digitali</h3>
+        <p>Un <strong>certificato digitale</strong> è un documento elettronico che associa l'identità di una persona, un'organizzazione o un server a una determinata chiave pubblica.</p>
+        <p>Serve per garantire che una chiave pubblica appartenga davvero al soggetto dichiarato.</p>
+        <h4>Contenuto di un certificato</h4>
+        <p>Generalmente contiene:</p>
+        <ul>
+          <li>dati del proprietario;</li>
+          <li>chiave pubblica;</li>
+          <li>periodo di validità;</li>
+          <li>numero identificativo del certificato;</li>
+          <li>firma dell'autorità che lo ha emesso.</li>
+        </ul>
+
+        <h4>Certification Authority (CA)</h4>
+        <p>I certificati vengono rilasciati da enti fidati chiamati <strong>Certification Authority (CA)</strong>.</p>
+        <p>Le CA:</p>
+        <ul>
+          <li>verificano l'identità del richiedente;</li>
+          <li>emettono il certificato;</li>
+          <li>garantiscono l'affidabilità della chiave pubblica associata.</li>
+        </ul>
+        <p>Esempi di CA sono enti accreditati che rilasciano certificati per siti web, aziende e cittadini.</p>
+
+        <h4>Certificati e HTTPS</h4>
+        <p>Quando si visita un sito HTTPS:</p>
+        <ol>
+          <li>Il server invia il proprio certificato digitale.</li>
+          <li>Il browser verifica che sia valido.</li>
+          <li>Se il certificato è corretto, viene stabilita una connessione sicura.</li>
+          <li>Se il certificato è scaduto o non valido, il browser mostra un avviso di sicurezza.</li>
+        </ol>
+
+        <h3>Differenza tra Firma Digitale e Certificato Digitale</h3>
+        <div class="table-wrap">
+          <table class="data">
+            <thead>
+              <tr><th>Firma Digitale</th><th>Certificato Digitale</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Serve a firmare documenti</td><td>Serve a identificare il proprietario di una chiave pubblica</td></tr>
+              <tr><td>Garantisce autenticità e integrità</td><td>Garantisce l'identità del soggetto</td></tr>
+              <tr><td>Utilizza la chiave privata</td><td>Contiene la chiave pubblica</td></tr>
+              <tr><td>Viene applicata a un documento</td><td>Viene rilasciato da una CA</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p><a href="materie.html">← Torna alle materie</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <p class="footer-brand">Giulia Cecconi</p>
+        <p>Studentessa di Informatica all'IIS "Marconi Pieralisi" di Jesi. Sito personale realizzato come progetto conclusivo del percorso di studi.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/giuliacecconiii" target="_blank" rel="noopener" aria-label="Profilo Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://github.com/Giulia431-creator" target="_blank" rel="noopener" aria-label="Profilo GitHub"><i data-lucide="github"></i></a>
+          <a href="mailto:giulia.cecconi07@icloud.com" aria-label="Invia una email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Link rapidi</h4>
+        <ul>
+          <li><a href="index.html#chi-sono">Chi sono</a></li>
+          <li><a href="index.html#passioni">Passioni</a></li>
+          <li><a href="materie.html">Materie</a></li>
+          <li><a href="educazione-civica.html">Educazione Civica</a></li>
+          <li><a href="pcto.html">PCTO</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:giulia.cecconi07@icloud.com">giulia.cecconi07@icloud.com</a></li>
+          <li><a href="tel:+393485394217">+39 348 5394217</a></li>
+          <li><a href="contatti.html">Tutti i contatti →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Giulia Cecconi — Esame di Stato, A.S. 2025/2026.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
