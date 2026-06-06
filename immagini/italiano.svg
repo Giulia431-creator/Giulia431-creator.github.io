@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 980" role="img" aria-label="Mappa della letteratura italiana studiata: dal romanzo dopo Manzoni e il Verismo alla poesia del Novecento e Calvino">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDF6F0"/>
+      <stop offset="1" stop-color="#FAE8E0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#FFFBF8"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#2C1A1D" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="980" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="600" y="58" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="600" fill="#2C1A1D">Italiano</text>
+  <text x="600" y="90" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#7A5C60">Dal romanzo dopo Manzoni e il Verismo alla poesia del Novecento</text>
+
+  <!-- =================== PANEL 1: ROMANZO DOPO MANZONI =================== -->
+  <g filter="url(#soft)"><rect x="40" y="116" width="360" height="392" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <text x="64" y="150" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#A0404A">Il romanzo dopo Manzoni</text>
+  <g font-family="Inter, system-ui, sans-serif">
+    <g font-size="13.5"><text x="64" y="184" font-weight="700" fill="#2C1A1D">Ippolito Nievo</text>
+      <text x="64" y="202" font-size="11.5" font-style="italic" fill="#7A5C60">Le confessioni di un italiano</text></g>
+    <g font-size="13.5"><text x="64" y="232" font-weight="700" fill="#2C1A1D">Edmondo De Amicis</text>
+      <text x="64" y="250" font-size="11.5" font-style="italic" fill="#7A5C60">Cuore &#8212; "Il ragazzo calabrese"</text></g>
+    <g font-size="13.5"><text x="64" y="280" font-weight="700" fill="#2C1A1D">Carlo Collodi</text>
+      <text x="64" y="298" font-size="11.5" font-style="italic" fill="#7A5C60">Le avventure di Pinocchio</text>
+      <text x="64" y="314" font-size="11" fill="#7A5C60">"C'era una volta un pezzo di legno"</text></g>
+    <g font-size="13.5"><text x="64" y="344" font-weight="700" fill="#2C1A1D">Emilio Salgari</text>
+      <text x="64" y="362" font-size="11.5" font-style="italic" fill="#7A5C60">I misteri della giungla nera</text>
+      <text x="64" y="378" font-size="11" fill="#7A5C60">"Nel cuore della giungla"</text></g>
+    <g font-size="13.5"><text x="64" y="408" font-weight="700" fill="#2C1A1D">Antonio Fogazzaro</text></g>
+  </g>
+  <!-- book icon -->
+  <g transform="translate(330,448)">
+    <path d="M-40 -18 q20 -8 40 0 v36 q-20 -8 -40 0 z" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.8"/>
+    <path d="M40 -18 q-20 -8 -40 0 v36 q20 -8 40 0 z" fill="#F4DDD3" stroke="#C9727A" stroke-width="1.8"/>
+    <line x1="0" y1="-16" x2="0" y2="20" stroke="#C9727A" stroke-width="1.8"/>
+  </g>
+
+  <!-- =================== PANEL 2: IL VERISMO =================== -->
+  <g filter="url(#soft)"><rect x="420" y="116" width="360" height="392" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <text x="444" y="150" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#A0404A">Il Verismo</text>
+  <g font-family="Inter, system-ui, sans-serif">
+    <g><rect x="444" y="166" width="170" height="34" rx="8" fill="#A0404A"/><text x="529" y="189" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Giovanni Verga</text></g>
+    <g font-size="13"><text x="444" y="228" font-weight="600" fill="#2C1A1D" font-style="italic">Vita dei campi</text>
+      <text x="444" y="246" font-size="11.5" fill="#7A5C60">"Rosso Malpelo" &#183; "La lupa"</text></g>
+    <g font-size="13"><text x="444" y="276" font-weight="600" fill="#2C1A1D" font-style="italic">Novelle rusticane</text>
+      <text x="444" y="294" font-size="11.5" fill="#7A5C60">"La roba" &#183; "Libertà"</text></g>
+    <g font-size="13"><text x="444" y="324" font-weight="600" fill="#2C1A1D" font-style="italic">I Malavoglia</text>
+      <text x="444" y="342" font-size="11.5" fill="#7A5C60">Prefazione al Ciclo dei Vinti</text>
+      <text x="444" y="358" font-size="11.5" fill="#7A5C60">"L'inizio del romanzo"</text></g>
+    <g font-size="13"><text x="444" y="388" font-weight="600" fill="#2C1A1D" font-style="italic">Mastro-don Gesualdo</text>
+      <text x="444" y="406" font-size="11.5" fill="#7A5C60">"La dura vita di un arrampicatore"</text>
+      <text x="444" y="422" font-size="11.5" fill="#7A5C60">"La morte di Gesualdo"</text></g>
+  </g>
+  <text x="600" y="466" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11.5" font-style="italic" fill="#7A5C60">il vero, l'impersonalità, i vinti</text>
+
+  <!-- =================== PANEL 3: POESIA FRANCESE & SCAPIGLIATURA =================== -->
+  <g filter="url(#soft)"><rect x="800" y="116" width="360" height="392" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <text x="824" y="150" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#A0404A">Poesia moderna francese</text>
+  <g font-family="Inter, system-ui, sans-serif">
+    <g font-size="13.5"><text x="824" y="182" font-weight="700" fill="#2C1A1D">Charles Baudelaire</text>
+      <text x="824" y="200" font-size="11.5" font-style="italic" fill="#7A5C60">I fiori del male</text>
+      <text x="824" y="216" font-size="11" fill="#7A5C60">"L'albatro" &#183; "Corrispondenze" &#183; "Elevazione"</text></g>
+    <g font-size="13.5"><text x="824" y="246" font-weight="700" fill="#2C1A1D">Paul Verlaine</text>
+      <text x="824" y="264" font-size="11" fill="#7A5C60">"Languore" &#183; "Arte poetica"</text></g>
+    <g font-size="13.5"><text x="824" y="294" font-weight="700" fill="#2C1A1D">Arthur Rimbaud</text>
+      <text x="824" y="312" font-size="11" fill="#7A5C60">"Le vocali"</text></g>
+  </g>
+  <line x1="824" y1="330" x2="1136" y2="330" stroke="#ECD3C9" stroke-width="1.5"/>
+  <text x="824" y="356" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#A0404A">La Scapigliatura</text>
+  <g font-family="Inter, system-ui, sans-serif">
+    <g font-size="13.5"><text x="824" y="386" font-weight="700" fill="#2C1A1D">I. U. Tarchetti</text>
+      <text x="824" y="404" font-size="11.5" font-style="italic" fill="#7A5C60">Fosca</text></g>
+    <g font-size="13.5"><text x="824" y="432" font-weight="700" fill="#2C1A1D">Emilio Praga</text>
+      <text x="824" y="450" font-size="11.5" fill="#7A5C60"><tspan font-style="italic">Penombre</tspan> &#8212; "Preludio"</text></g>
+  </g>
+  <text x="980" y="486" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11.5" font-style="italic" fill="#7A5C60">ribellione e bohème</text>
+
+  <!-- =================== PANEL 4: PASCOLI & DECADENTISMO =================== -->
+  <g filter="url(#soft)"><rect x="40" y="528" width="360" height="416" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <text x="64" y="562" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#A0404A">Pascoli &amp; Decadentismo</text>
+  <g font-family="Inter, system-ui, sans-serif">
+    <g><rect x="64" y="578" width="180" height="34" rx="8" fill="#C9727A"/><text x="154" y="601" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Giovanni Pascoli</text>
+      <text x="252" y="600" font-size="10.5" fill="#7A5C60">&#9733; il mio preferito</text></g>
+    <g font-size="12.5"><text x="64" y="636" font-style="italic" fill="#2C1A1D">Il fanciullino &#183; Myricae</text>
+      <text x="64" y="654" font-size="11" fill="#7A5C60">"X Agosto" &#183; "Il lampo" &#183; "Il tuono"</text>
+      <text x="64" y="670" font-size="11" fill="#7A5C60">"Solitudine" &#183; "Il cacciatore"</text></g>
+  </g>
+  <line x1="64" y1="688" x2="376" y2="688" stroke="#ECD3C9" stroke-width="1.5"/>
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="64" y="716" font-size="15" font-weight="700" fill="#A0404A">Il Decadentismo</text>
+    <g font-size="13.5"><text x="64" y="746" font-weight="700" fill="#2C1A1D">Oscar Wilde</text>
+      <text x="64" y="764" font-size="11" font-style="italic" fill="#7A5C60">Il ritratto di Dorian Gray &#8212; "Prefazione"</text></g>
+    <g font-size="13.5"><text x="64" y="794" font-weight="700" fill="#2C1A1D">Gabriele D'Annunzio</text>
+      <text x="64" y="812" font-size="11.5" fill="#7A5C60"><tspan font-style="italic">Alcyone</tspan> &#8212; "La pioggia nel pineto"</text>
+      <text x="64" y="828" font-size="11.5" fill="#7A5C60">"La sera fiesolana"</text>
+      <text x="64" y="844" font-size="11.5" fill="#7A5C60"><tspan font-style="italic">Il piacere</tspan> &#8212; Andrea Sperelli</text></g>
+  </g>
+  <text x="200" y="884" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11.5" font-style="italic" fill="#7A5C60">estetismo, fonosimbolismo, il poeta-vate</text>
+
+  <!-- =================== PANEL 5: IL MODERNISMO =================== -->
+  <g filter="url(#soft)"><rect x="420" y="528" width="360" height="416" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <text x="444" y="562" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#A0404A">Il Modernismo</text>
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="444" y="588" font-size="13" font-weight="600" fill="#A0404A">Crepuscolari &amp; Futuristi</text>
+    <g font-size="12"><text x="444" y="608" fill="#2C1A1D"><tspan font-weight="700">Palazzeschi</tspan> &#8212; "Chi sono?"</text>
+      <text x="444" y="626" fill="#2C1A1D"><tspan font-weight="700">Gozzano</tspan> &#8212; <tspan font-style="italic">La via del rifugio</tspan></text>
+      <text x="444" y="644" fill="#2C1A1D"><tspan font-weight="700">Marinetti</tspan> &#8212; Manifesto futurista</text></g>
+  </g>
+  <line x1="444" y1="660" x2="756" y2="660" stroke="#ECD3C9" stroke-width="1.5"/>
+  <g font-family="Inter, system-ui, sans-serif">
+    <g><rect x="444" y="672" width="170" height="32" rx="8" fill="#A0404A"/><text x="529" y="694" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Luigi Pirandello</text></g>
+    <g font-size="11"><text x="444" y="722" fill="#7A5C60"><tspan font-style="italic">Il fu Mattia Pascal</tspan> &#183; <tspan font-style="italic">Uno, nessuno e centomila</tspan></text>
+      <text x="444" y="738" fill="#7A5C60"><tspan font-style="italic">Novelle</tspan>: "Ciàula scopre la luna"</text>
+      <text x="444" y="754" fill="#7A5C60">"Il treno ha fischiato" &#183; "La lanterninosofia"</text></g>
+    <g><rect x="444" y="768" width="150" height="32" rx="8" fill="#C9727A"/><text x="519" y="790" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Italo Svevo</text></g>
+    <g font-size="11"><text x="444" y="818" fill="#7A5C60"><tspan font-style="italic">Una vita</tspan> &#183; <tspan font-style="italic">Senilità</tspan></text>
+      <text x="444" y="834" fill="#7A5C60"><tspan font-style="italic">La coscienza di Zeno</tspan></text>
+      <text x="444" y="850" fill="#7A5C60">"l'eterna ultima sigaretta"</text></g>
+  </g>
+  <text x="600" y="888" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11.5" font-style="italic" fill="#7A5C60">la crisi dell'io e l'inetto</text>
+
+  <!-- =================== PANEL 6: POESIA DEL '900 & CALVINO =================== -->
+  <g filter="url(#soft)"><rect x="800" y="528" width="360" height="416" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <text x="824" y="562" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#A0404A">Poesia del Novecento</text>
+  <g font-family="Inter, system-ui, sans-serif">
+    <g font-size="13.5"><text x="824" y="592" font-weight="700" fill="#2C1A1D">Giuseppe Ungaretti</text>
+      <text x="824" y="610" font-size="11.5" fill="#7A5C60"><tspan font-style="italic">L'Allegria</tspan> &#8212; "Soldati" &#183; "I fiumi"</text>
+      <text x="824" y="626" font-size="11.5" fill="#7A5C60">"San Martino del Carso" &#183; "Sono una creatura"</text></g>
+    <g font-size="13.5"><text x="824" y="656" font-weight="700" fill="#2C1A1D">Eugenio Montale</text>
+      <text x="824" y="674" font-size="11.5" fill="#7A5C60"><tspan font-style="italic">Ossi di seppia</tspan> &#8212; "I limoni"</text>
+      <text x="824" y="690" font-size="11.5" fill="#7A5C60">"Meriggiare pallido e assorto"</text>
+      <text x="824" y="706" font-size="11.5" fill="#7A5C60">"Spesso il male di vivere ho incontrato"</text>
+      <text x="824" y="722" font-size="11.5" fill="#7A5C60"><tspan font-style="italic">Satura</tspan> &#8212; "Ho sceso, dandoti il braccio..."</text></g>
+  </g>
+  <line x1="824" y1="740" x2="1136" y2="740" stroke="#ECD3C9" stroke-width="1.5"/>
+  <g font-family="Inter, system-ui, sans-serif">
+    <g><rect x="824" y="752" width="150" height="34" rx="8" fill="#A0404A"/><text x="899" y="775" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Italo Calvino</text></g>
+    <g font-size="12.5"><text x="824" y="812" fill="#2C1A1D" font-style="italic">Il sentiero dei nidi di ragno</text>
+      <text x="824" y="830" font-size="11.5" fill="#7A5C60">(lettura integrale)</text>
+      <text x="824" y="850" fill="#2C1A1D" font-style="italic">Ultimo viene il corvo &#183; Palomar</text></g>
+  </g>
+  <text x="980" y="888" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11.5" font-style="italic" fill="#7A5C60">guerra, memoria e sguardo sul reale</text>
+</svg>

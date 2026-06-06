@@ -386,6 +386,20 @@ p {
   font-weight: 600;
   letter-spacing: 0.02em;
 }
+.monogram--photo {
+  overflow: hidden;
+}
+.monogram--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+.monogram--photo small {
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
 .monogram small {
   position: absolute;
   bottom: 1.1rem;
@@ -481,6 +495,11 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.subject-card__media img.is-illustration {
+  object-fit: contain;
+  padding: 6px;
+  background: var(--color-bg);
 }
 .subject-card__media .lucide {
   width: 48px;
@@ -650,6 +669,116 @@ figcaption {
   object-fit: cover;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-sm);
+  cursor: zoom-in;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.gallery img:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+/* Lightbox (zoom foto a schermo intero) */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  place-items: center;
+  padding: 4vmin;
+  background: rgba(20, 12, 14, 0.9);
+  cursor: zoom-out;
+}
+.lightbox.is-open {
+  display: grid;
+}
+.lightbox__img {
+  max-width: 92vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+}
+.lightbox__close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 1;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.lightbox__close:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* Video embed responsivo (Google Drive) */
+.video-embed {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: var(--space-md) auto var(--space-lg);
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: #000;
+}
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Collage di immagini (Capolavoro) */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a a b"
+    "a a c"
+    "d e e";
+  grid-auto-rows: 200px;
+  gap: var(--space-sm);
+  margin-block: var(--space-md);
+}
+.collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  cursor: zoom-in;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.collage img:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+.collage img:nth-child(1) { grid-area: a; }
+.collage img:nth-child(2) { grid-area: b; }
+.collage img:nth-child(3) { grid-area: c; }
+.collage img:nth-child(4) { grid-area: d; }
+.collage img:nth-child(5) { grid-area: e; }
+@media (max-width: 640px) {
+  .collage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e";
+    grid-auto-rows: 150px;
+  }
 }
 
 /* -------------------------------------------------

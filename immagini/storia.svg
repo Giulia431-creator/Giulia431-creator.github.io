@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Linea del tempo del Novecento: dall'alba del secolo al crollo del comunismo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDF6F0"/>
+      <stop offset="1" stop-color="#FAE8E0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#FFFBF8"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#2C1A1D" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="600" y="58" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="600" fill="#2C1A1D">Storia &#8212; Il Novecento</text>
+  <text x="600" y="90" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#7A5C60">Dall'alba del secolo al crollo del comunismo</text>
+
+  <!-- timeline ribbon row 1 -->
+  <line x1="80" y1="148" x2="1120" y2="148" stroke="#C9727A" stroke-width="3"/>
+  <g fill="#A0404A"><circle cx="175" cy="148" r="7"/><circle cx="465" cy="148" r="7"/><circle cx="755" cy="148" r="7"/><circle cx="1045" cy="148" r="7"/></g>
+
+  <!-- ===== CARD 1 ===== -->
+  <g filter="url(#soft)"><rect x="40" y="170" width="270" height="320" rx="16" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <g><rect x="64" y="158" width="92" height="30" rx="15" fill="#A0404A"/><text x="110" y="178" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">1900&#8211;14</text></g>
+  <text x="64" y="222" font-family="Inter, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#A0404A">All'alba del Novecento</text>
+  <text x="64" y="244" font-family="Inter, system-ui, sans-serif" font-size="12" font-style="italic" fill="#7A5C60">tra euforia e inquietudini</text>
+  <g font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#2C1A1D">
+    <text x="64" y="282">&#8226; Un nuovo ciclo economico</text>
+    <text x="64" y="310">&#8226; Globalizzazione degli</text><text x="78" y="328">scambi internazionali</text>
+    <text x="64" y="356">&#8226; Una società in movimento</text>
+  </g>
+  <text x="64" y="408" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">La Belle Époque, il progresso</text>
+  <text x="64" y="426" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">industriale e le prime tensioni</text>
+
+  <!-- ===== CARD 2 ===== -->
+  <g filter="url(#soft)"><rect x="330" y="170" width="270" height="320" rx="16" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <g><rect x="354" y="158" width="100" height="30" rx="15" fill="#A0404A"/><text x="404" y="178" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">1914&#8211;18</text></g>
+  <text x="354" y="222" font-family="Inter, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#A0404A">La Grande Guerra</text>
+  <g font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#2C1A1D">
+    <text x="354" y="258">&#8226; 1914: verso il precipizio</text>
+    <text x="354" y="286">&#8226; L'Italia dalla neutralità</text><text x="368" y="304">all'intervento</text>
+    <text x="354" y="332">&#8226; 1915-16: un'immane</text><text x="368" y="350">carneficina</text>
+    <text x="354" y="378">&#8226; Le svolte del 1917</text>
+    <text x="354" y="406">&#8226; L'epilogo della guerra</text>
+  </g>
+  <text x="354" y="450" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">guerra di trincea e di massa</text>
+
+  <!-- ===== CARD 3 ===== -->
+  <g filter="url(#soft)"><rect x="620" y="170" width="270" height="320" rx="16" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <g><rect x="644" y="158" width="100" height="30" rx="15" fill="#A0404A"/><text x="694" y="178" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">1917&#8211;22</text></g>
+  <text x="644" y="222" font-family="Inter, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#A0404A">Dopoguerra e Rivoluzione</text>
+  <g font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#2C1A1D">
+    <text x="644" y="258">&#8226; Trattati di pace e</text><text x="658" y="276">Società delle Nazioni</text>
+    <text x="644" y="304">&#8226; Conseguenze economiche</text><text x="658" y="322">e sociali della guerra</text>
+    <text x="644" y="350">&#8226; La rivoluzione bolscevica</text><text x="658" y="368">in Russia</text>
+    <text x="644" y="396">&#8226; Il biennio rosso e il</text><text x="658" y="414">difficile dopoguerra italiano</text>
+  </g>
+  <text x="644" y="456" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">fragili equilibri e nuove tensioni</text>
+
+  <!-- ===== CARD 4 ===== -->
+  <g filter="url(#soft)"><rect x="910" y="170" width="250" height="320" rx="16" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <g><rect x="934" y="158" width="92" height="30" rx="15" fill="#A0404A"/><text x="980" y="178" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">1922&#8211;39</text></g>
+  <text x="934" y="222" font-family="Inter, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#A0404A">Il regime fascista</text>
+  <g font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#2C1A1D">
+    <text x="934" y="258">&#8226; Il movimento fascista</text><text x="948" y="276">e l'avvento di Mussolini</text>
+    <text x="934" y="304">&#8226; La costruzione del regime</text>
+    <text x="934" y="332">&#8226; La politica economica</text>
+    <text x="934" y="360">&#8226; La politica estera fascista</text>
+  </g>
+  <text x="934" y="412" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">dittatura, propaganda</text>
+  <text x="934" y="430" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">e culto del capo</text>
+
+  <!-- timeline ribbon row 2 -->
+  <line x1="80" y1="528" x2="1120" y2="528" stroke="#C9727A" stroke-width="3"/>
+  <g fill="#A0404A"><circle cx="175" cy="528" r="7"/><circle cx="465" cy="528" r="7"/><circle cx="755" cy="528" r="7"/><circle cx="1045" cy="528" r="7"/></g>
+
+  <!-- ===== CARD 5 ===== -->
+  <g filter="url(#soft)"><rect x="40" y="550" width="270" height="320" rx="16" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <g><rect x="64" y="538" width="72" height="30" rx="15" fill="#A0404A"/><text x="100" y="558" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">1929</text></g>
+  <text x="64" y="602" font-family="Inter, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#A0404A">La crisi del 1929</text>
+  <!-- crash arrow -->
+  <g><path d="M70 636 l40 28 l24 -16 l50 36" fill="none" stroke="#C9727A" stroke-width="2.5"/><path d="M184 684 l0 -22 l-20 8 z" fill="#C9727A"/></g>
+  <g font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#2C1A1D">
+    <text x="64" y="724">&#8226; Gli Stati Uniti da</text><text x="78" y="742">Wilson a Roosevelt</text>
+    <text x="64" y="770">&#8226; L'interventismo dello Stato</text>
+    <text x="64" y="798">&#8226; Le terapie di Keynes</text>
+  </g>
+  <text x="64" y="838" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">il New Deal e il ruolo dello Stato</text>
+
+  <!-- ===== CARD 6 (highlight: nazismo) ===== -->
+  <g filter="url(#soft)"><rect x="330" y="550" width="270" height="320" rx="16" fill="#FAE8E0" stroke="#A0404A" stroke-width="2.4"/></g>
+  <g><rect x="354" y="538" width="92" height="30" rx="15" fill="#A0404A"/><text x="400" y="558" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">1924&#8211;39</text></g>
+  <text x="566" y="558" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#A0404A" font-weight="600">&#9733; il mio tema</text>
+  <text x="354" y="602" font-family="Inter, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#A0404A">Stalinismo e Nazismo</text>
+  <g font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#2C1A1D">
+    <text x="354" y="638">&#8226; I primi anni di Stalin</text>
+    <text x="354" y="666">&#8226; Il totalitarismo staliniano</text>
+    <text x="354" y="694">&#8226; Germania: crisi economica</text><text x="368" y="712">e debolezza istituzionale</text>
+    <text x="354" y="740" font-weight="700" fill="#A0404A">&#8226; Hitler al potere e il Terzo Reich</text>
+    <text x="354" y="768">&#8226; L'antisemitismo</text>
+  </g>
+  <text x="354" y="812" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">i totalitarismi: consenso,</text>
+  <text x="354" y="830" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">propaganda e repressione</text>
+
+  <!-- ===== CARD 7 ===== -->
+  <g filter="url(#soft)"><rect x="620" y="550" width="270" height="320" rx="16" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <g><rect x="644" y="538" width="100" height="30" rx="15" fill="#A0404A"/><text x="694" y="558" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">1939&#8211;45</text></g>
+  <text x="644" y="602" font-family="Inter, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#A0404A">La Seconda Guerra Mondiale</text>
+  <g font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#2C1A1D">
+    <text x="644" y="636">&#8226; Le prime operazioni belliche</text>
+    <text x="644" y="664">&#8226; La svolta del '41-'42</text>
+    <text x="644" y="692">&#8226; Il ripiegamento dell'Asse</text>
+    <text x="644" y="720">&#8226; L'Italia spaccata: Salò</text><text x="658" y="738">e la Resistenza</text>
+    <text x="644" y="766">&#8226; La guerra e i civili</text>
+  </g>
+  <text x="644" y="812" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">il conflitto totale e la</text>
+  <text x="644" y="830" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">Liberazione (25 aprile 1945)</text>
+
+  <!-- ===== CARD 8 ===== -->
+  <g filter="url(#soft)"><rect x="910" y="550" width="250" height="320" rx="16" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <g><rect x="934" y="538" width="100" height="30" rx="15" fill="#A0404A"/><text x="984" y="558" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fff">1945&#8211;91</text></g>
+  <text x="934" y="602" font-family="Inter, system-ui, sans-serif" font-size="15.5" font-weight="700" fill="#A0404A">Un mondo diviso in due</text>
+  <g font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#2C1A1D">
+    <text x="934" y="636">&#8226; L'inizio della guerra fredda</text>
+    <text x="934" y="664">&#8226; L'integrazione europea</text>
+    <text x="934" y="692">&#8226; Entra in scena il Terzo mondo</text>
+    <text x="934" y="720">&#8226; Gli anni '60: età dell'oro</text>
+    <text x="934" y="748">&#8226; Le svolte degli anni '70</text>
+    <text x="934" y="776">&#8226; Distensione e crollo</text><text x="948" y="794">del comunismo</text>
+  </g>
+  <text x="934" y="836" font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60">dal bipolarismo al 1989-91</text>
+</svg>

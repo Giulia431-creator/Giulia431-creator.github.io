@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Architettura di un'applicazione web: client, richiesta e risposta HTTP, server PHP e database SQL">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDF6F0"/>
+      <stop offset="1" stop-color="#FAE8E0"/>
+    </linearGradient>
+    <linearGradient id="server" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9727A"/>
+      <stop offset="1" stop-color="#A0404A"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#2C1A1D" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#A0404A"/>
+    </marker>
+    <marker id="arrowL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#C9727A"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="600" y="78" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="600" fill="#2C1A1D">Informatica</text>
+  <text x="600" y="112" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#7A5C60">Applicazioni web &#183; HTTP &#183; PHP &#183; SQL &#183; Web service</text>
+
+  <!-- ===== CLIENT (browser) ===== -->
+  <g filter="url(#soft)">
+    <rect x="70" y="220" width="300" height="220" rx="16" fill="#ffffff" stroke="#ECD3C9" stroke-width="2"/>
+    <rect x="70" y="220" width="300" height="44" rx="16" fill="#F4DDD3"/>
+    <rect x="70" y="248" width="300" height="16" fill="#F4DDD3"/>
+    <circle cx="96" cy="242" r="6" fill="#C9727A"/>
+    <circle cx="116" cy="242" r="6" fill="#ECD3C9"/>
+    <circle cx="136" cy="242" r="6" fill="#ECD3C9"/>
+    <rect x="160" y="234" width="186" height="16" rx="8" fill="#FDF6F0"/>
+    <rect x="100" y="296" width="240" height="14" rx="7" fill="#ECD3C9"/>
+    <rect x="100" y="324" width="190" height="14" rx="7" fill="#F4DDD3"/>
+    <rect x="100" y="352" width="220" height="14" rx="7" fill="#F4DDD3"/>
+    <rect x="100" y="392" width="110" height="30" rx="8" fill="#C9727A"/>
+  </g>
+  <text x="220" y="478" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="600" fill="#A0404A">Client (browser)</text>
+  <text x="220" y="502" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#7A5C60">Web statico &#43; dinamico</text>
+
+  <!-- ===== HTTP arrows ===== -->
+  <g font-family="'Courier New', monospace" font-size="15">
+    <line x1="378" y1="300" x2="468" y2="300" stroke="#A0404A" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="423" y="288" text-anchor="middle" fill="#A0404A" font-weight="700">GET / POST</text>
+    <text x="423" y="318" text-anchor="middle" fill="#7A5C60" font-size="13">request</text>
+
+    <line x1="468" y1="360" x2="378" y2="360" stroke="#C9727A" stroke-width="3" marker-end="url(#arrowL)"/>
+    <text x="423" y="392" text-anchor="middle" fill="#C9727A" font-weight="700">200 OK</text>
+    <text x="423" y="348" text-anchor="middle" fill="#7A5C60" font-size="13">response</text>
+  </g>
+
+  <!-- ===== SERVER (PHP) ===== -->
+  <g filter="url(#soft)">
+    <rect x="480" y="230" width="260" height="200" rx="16" fill="url(#server)"/>
+    <rect x="504" y="258" width="212" height="26" rx="6" fill="#ffffff" fill-opacity="0.16"/>
+    <rect x="504" y="296" width="212" height="26" rx="6" fill="#ffffff" fill-opacity="0.16"/>
+    <rect x="504" y="334" width="212" height="26" rx="6" fill="#ffffff" fill-opacity="0.16"/>
+    <circle cx="524" cy="271" r="5" fill="#FDF6F0"/>
+    <circle cx="524" cy="309" r="5" fill="#FDF6F0"/>
+    <circle cx="524" cy="347" r="5" fill="#FDF6F0"/>
+    <rect x="546" y="384" width="148" height="34" rx="8" fill="#FDF6F0"/>
+    <text x="620" y="407" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#A0404A">&lt;?php ?&gt;</text>
+  </g>
+  <text x="610" y="478" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="600" fill="#A0404A">Server &#183; PHP</text>
+  <text x="610" y="502" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#7A5C60">Sessioni &#183; cookie &#183; superglobal</text>
+
+  <!-- server -> db arrow -->
+  <g font-family="'Courier New', monospace" font-size="14">
+    <line x1="748" y1="330" x2="838" y2="330" stroke="#A0404A" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="793" y="318" text-anchor="middle" fill="#7A5C60" font-size="13">query SQL</text>
+  </g>
+
+  <!-- ===== DATABASE (SQL) ===== -->
+  <g filter="url(#soft)">
+    <g fill="#FAE8E0" stroke="#C9727A" stroke-width="2.5">
+      <ellipse cx="980" cy="250" rx="90" ry="26"/>
+      <path d="M890 250 v120 a90 26 0 0 0 180 0 v-120" fill="#FDF6F0"/>
+    </g>
+    <ellipse cx="980" cy="250" rx="90" ry="26" fill="#FAE8E0" stroke="#C9727A" stroke-width="2.5"/>
+    <path d="M890 290 a90 26 0 0 0 180 0" fill="none" stroke="#ECD3C9" stroke-width="2"/>
+    <path d="M890 330 a90 26 0 0 0 180 0" fill="none" stroke="#ECD3C9" stroke-width="2"/>
+  </g>
+  <text x="980" y="478" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="600" fill="#A0404A">Database &#183; SQL</text>
+  <text x="980" y="502" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#7A5C60">SELECT &#183; GROUP BY &#183; ORDER BY</text>
+
+  <!-- ===== bottom badges: web service / CRUD ===== -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600">
+    <g>
+      <rect x="150" y="560" width="180" height="58" rx="29" fill="#ffffff" stroke="#ECD3C9" stroke-width="2"/>
+      <text x="240" y="586" text-anchor="middle" fill="#A0404A">REST / SOAP</text>
+      <text x="240" y="606" text-anchor="middle" fill="#7A5C60" font-size="12" font-weight="500">Web service</text>
+    </g>
+    <g>
+      <rect x="360" y="560" width="200" height="58" rx="29" fill="#ffffff" stroke="#ECD3C9" stroke-width="2"/>
+      <text x="460" y="586" text-anchor="middle" fill="#A0404A">HTTP &#8594; CRUD</text>
+      <text x="460" y="606" text-anchor="middle" fill="#7A5C60" font-size="12" font-weight="500">GET POST PUT DELETE</text>
+    </g>
+    <g>
+      <rect x="590" y="560" width="210" height="58" rx="29" fill="#ffffff" stroke="#ECD3C9" stroke-width="2"/>
+      <text x="695" y="586" text-anchor="middle" fill="#A0404A">Query annidate</text>
+      <text x="695" y="606" text-anchor="middle" fill="#7A5C60" font-size="12" font-weight="500">Raggruppamento &#183; ordinamento</text>
+    </g>
+    <g>
+      <rect x="830" y="560" width="220" height="58" rx="29" fill="#ffffff" stroke="#ECD3C9" stroke-width="2"/>
+      <text x="940" y="586" text-anchor="middle" fill="#A0404A">Array associativi</text>
+      <text x="940" y="606" text-anchor="middle" fill="#7A5C60" font-size="12" font-weight="500">Moduli &#183; file &#183; DBMS</text>
+    </g>
+  </g>
+</svg>

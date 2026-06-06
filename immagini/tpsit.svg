@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Mappa dei concetti di TPSIT: concorrenza e sincronizzazione, ciclo di vita del software e sviluppo di applicazioni Android">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDF6F0"/>
+      <stop offset="1" stop-color="#FAE8E0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#FFFBF8"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9727A"/>
+      <stop offset="1" stop-color="#A0404A"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#2C1A1D" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#A0404A"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="600" y="64" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="600" fill="#2C1A1D">TPSIT</text>
+  <text x="600" y="98" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#7A5C60">Concorrenza &#183; Ciclo di vita del software &#183; Sviluppo Android</text>
+
+  <!-- =================== PANEL 1: CONCORRENZA =================== -->
+  <g filter="url(#soft)">
+    <rect x="40" y="150" width="360" height="500" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/>
+  </g>
+  <text x="220" y="190" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#A0404A">Concorrenza</text>
+
+  <!-- producer / consumer + circular buffer -->
+  <g font-family="Inter, system-ui, sans-serif">
+    <!-- producer -->
+    <rect x="70" y="222" width="86" height="40" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="2"/>
+    <text x="113" y="247" text-anchor="middle" font-size="13" font-weight="600" fill="#A0404A">Producer</text>
+    <!-- consumer -->
+    <rect x="284" y="222" width="86" height="40" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="2"/>
+    <text x="327" y="247" text-anchor="middle" font-size="13" font-weight="600" fill="#A0404A">Consumer</text>
+
+    <!-- circular buffer -->
+    <circle cx="220" cy="320" r="44" fill="none" stroke="#ECD3C9" stroke-width="3"/>
+    <g fill="#C9727A">
+      <circle cx="220" cy="276" r="8"/><circle cx="251" cy="289" r="8"/><circle cx="264" cy="320" r="8"/>
+    </g>
+    <g fill="#F4DDD3" stroke="#C9727A" stroke-width="1.5">
+      <circle cx="251" cy="351" r="8"/><circle cx="220" cy="364" r="8"/><circle cx="189" cy="351" r="8"/>
+      <circle cx="176" cy="320" r="8"/><circle cx="189" cy="289" r="8"/>
+    </g>
+    <text x="220" y="324" text-anchor="middle" font-size="10.5" fill="#7A5C60">buffer</text>
+    <text x="220" y="337" text-anchor="middle" font-size="10.5" fill="#7A5C60">circolare</text>
+
+    <!-- arrows prod->buffer->cons -->
+    <path d="M124 264 q-10 30 50 38" fill="none" stroke="#A0404A" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M266 302 q40 -8 50 -38" fill="none" stroke="#A0404A" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- semaforo -->
+  <g>
+    <rect x="92" y="408" width="34" height="84" rx="8" fill="#2C1A1D"/>
+    <circle cx="109" cy="428" r="11" fill="#A0404A"/>
+    <circle cx="109" cy="452" r="11" fill="#3a2a2d"/>
+    <circle cx="109" cy="476" r="11" fill="#C9727A"/>
+    <text x="255" y="436" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#A0404A">Semafori &amp; sincro</text>
+    <text x="255" y="460" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#7A5C60">Mutua esclusione sulle</text>
+    <text x="255" y="478" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#7A5C60">risorse condivise</text>
+  </g>
+
+  <text x="220" y="528" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#7A5C60">Processi &amp; thread &#183; race condition</text>
+  <text x="220" y="550" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#7A5C60">Parallelismo reale e apparente</text>
+
+  <!-- cinque filosofi -->
+  <g>
+    <text x="220" y="586" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#A0404A">Cinque filosofi a cena</text>
+    <circle cx="220" cy="618" r="14" fill="none" stroke="#ECD3C9" stroke-width="2.5"/>
+    <g fill="#C9727A">
+      <circle cx="220" cy="600" r="5.5"/><circle cx="237" cy="612" r="5.5"/><circle cx="230" cy="632" r="5.5"/>
+      <circle cx="210" cy="632" r="5.5"/><circle cx="203" cy="612" r="5.5"/>
+    </g>
+  </g>
+
+  <!-- =================== PANEL 2: CICLO DI VITA =================== -->
+  <g filter="url(#soft)">
+    <rect x="420" y="150" width="320" height="500" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/>
+  </g>
+  <text x="580" y="190" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#A0404A">Ciclo di vita del software</text>
+
+  <!-- waterfall / lifecycle steps -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="14">
+    <g>
+      <rect x="470" y="218" width="220" height="40" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.8"/>
+      <text x="580" y="243" text-anchor="middle" fill="#A0404A" font-weight="600">Analisi dei requisiti</text>
+    </g>
+    <g>
+      <rect x="470" y="272" width="220" height="40" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.8"/>
+      <text x="580" y="297" text-anchor="middle" fill="#A0404A" font-weight="600">Progettazione</text>
+    </g>
+    <g>
+      <rect x="470" y="326" width="220" height="40" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.8"/>
+      <text x="580" y="351" text-anchor="middle" fill="#A0404A" font-weight="600">Sviluppo</text>
+    </g>
+    <g>
+      <rect x="470" y="380" width="220" height="40" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.8"/>
+      <text x="580" y="405" text-anchor="middle" fill="#A0404A" font-weight="600">Testing</text>
+    </g>
+    <g>
+      <rect x="470" y="434" width="220" height="40" rx="8" fill="#C9727A"/>
+      <text x="580" y="459" text-anchor="middle" fill="#fff" font-weight="600">Manutenzione</text>
+    </g>
+    <g stroke="#A0404A" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="580" y1="258" x2="580" y2="270"/>
+      <line x1="580" y1="312" x2="580" y2="324"/>
+      <line x1="580" y1="366" x2="580" y2="378"/>
+      <line x1="580" y1="420" x2="580" y2="432"/>
+    </g>
+  </g>
+
+  <!-- agile loop -->
+  <g>
+    <path d="M512 540 a68 30 0 1 1 136 0" fill="none" stroke="#A0404A" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="580" y="530" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#A0404A">AGILE</text>
+    <text x="580" y="586" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#7A5C60">Iterazioni &amp; modelli di sviluppo</text>
+    <text x="580" y="612" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12.5" fill="#7A5C60">Documentazione dei progetti</text>
+  </g>
+
+  <!-- =================== PANEL 3: ANDROID =================== -->
+  <g filter="url(#soft)">
+    <rect x="760" y="150" width="400" height="500" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/>
+  </g>
+  <text x="960" y="190" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#A0404A">Sviluppo Android</text>
+
+  <!-- phone -->
+  <g>
+    <rect x="800" y="218" width="120" height="232" rx="22" fill="url(#phone)"/>
+    <rect x="812" y="248" width="96" height="160" rx="6" fill="#FDF6F0"/>
+    <rect x="846" y="228" width="28" height="6" rx="3" fill="#FDF6F0" fill-opacity="0.7"/>
+    <!-- app UI: toolbar + widgets -->
+    <rect x="812" y="248" width="96" height="22" fill="#C9727A"/>
+    <rect x="822" y="284" width="76" height="12" rx="4" fill="#ECD3C9"/>
+    <rect x="822" y="306" width="56" height="12" rx="4" fill="#F4DDD3"/>
+    <rect x="822" y="334" width="76" height="26" rx="6" fill="#A0404A"/>
+    <text x="860" y="351" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#fff" font-weight="600">Button</text>
+    <rect x="822" y="372" width="76" height="22" rx="6" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.2"/>
+    <text x="860" y="387" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9.5" fill="#A0404A">Toast / Snackbar</text>
+    <circle cx="860" cy="430" r="9" fill="none" stroke="#FDF6F0" stroke-width="2"/>
+  </g>
+
+  <!-- architecture layers -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="12.5">
+    <g>
+      <rect x="940" y="222" width="190" height="34" rx="6" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/>
+      <text x="1035" y="244" text-anchor="middle" fill="#A0404A" font-weight="600">Applications</text>
+    </g>
+    <g>
+      <rect x="940" y="262" width="190" height="34" rx="6" fill="#F4DDD3" stroke="#C9727A" stroke-width="1.5"/>
+      <text x="1035" y="284" text-anchor="middle" fill="#A0404A" font-weight="600">App Framework</text>
+    </g>
+    <g>
+      <rect x="940" y="302" width="190" height="34" rx="6" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/>
+      <text x="1035" y="324" text-anchor="middle" fill="#A0404A" font-weight="600">Libraries + Runtime</text>
+    </g>
+    <g>
+      <rect x="940" y="342" width="190" height="34" rx="6" fill="#C9727A"/>
+      <text x="1035" y="364" text-anchor="middle" fill="#fff" font-weight="600">Linux Kernel</text>
+    </g>
+    <text x="1035" y="404" text-anchor="middle" fill="#7A5C60" font-size="12">Architettura a livelli</text>
+  </g>
+
+  <!-- activity lifecycle -->
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="960" y="492" text-anchor="middle" font-size="13" font-weight="600" fill="#A0404A">Ciclo di vita di un'Activity</text>
+    <g font-size="11" font-weight="600">
+      <g><rect x="800" y="508" width="78" height="30" rx="15" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/><text x="839" y="528" text-anchor="middle" fill="#A0404A">onCreate</text></g>
+      <g><rect x="898" y="508" width="74" height="30" rx="15" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/><text x="935" y="528" text-anchor="middle" fill="#A0404A">onResume</text></g>
+      <g><rect x="992" y="508" width="66" height="30" rx="15" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/><text x="1025" y="528" text-anchor="middle" fill="#A0404A">onPause</text></g>
+      <g><rect x="1078" y="508" width="74" height="30" rx="15" fill="#C9727A"/><text x="1115" y="528" text-anchor="middle" fill="#fff">onDestroy</text></g>
+      <g stroke="#A0404A" stroke-width="1.8" fill="none" marker-end="url(#arrow)">
+        <line x1="880" y1="523" x2="894" y2="523"/>
+        <line x1="974" y1="523" x2="988" y2="523"/>
+        <line x1="1060" y1="523" x2="1074" y2="523"/>
+      </g>
+    </g>
+    <text x="960" y="572" text-anchor="middle" font-size="12.5" fill="#7A5C60">Android Studio &#183; Material Design</text>
+    <text x="960" y="594" text-anchor="middle" font-size="12.5" fill="#7A5C60">Sensori &#183; Database &#183; Web service</text>
+    <text x="960" y="616" text-anchor="middle" font-size="12.5" fill="#7A5C60">Testing &#183; Build &#183; Deploy &amp; rilascio</text>
+  </g>
+</svg>

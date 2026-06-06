@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Mappa dei concetti di Matematica: funzioni in due variabili, integrali, calcolo combinatorio e probabilità">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDF6F0"/>
+      <stop offset="1" stop-color="#FAE8E0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#FFFBF8"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9727A" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#C9727A" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#2C1A1D" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+
+  <!-- title -->
+  <text x="600" y="64" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="600" fill="#2C1A1D">Matematica</text>
+  <text x="600" y="98" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#7A5C60">Funzioni in due variabili &#183; Integrali &#183; Calcolo combinatorio e probabilità</text>
+
+  <!-- ============ PANEL 1: FUNZIONI IN DUE VARIABILI ============ -->
+  <g filter="url(#soft)"><rect x="40" y="150" width="360" height="500" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <text x="220" y="190" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="700" fill="#A0404A">Funzioni in due variabili</text>
+  <text x="220" y="212" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#7A5C60">z = f(x, y)</text>
+
+  <!-- contour / level curves with saddle -->
+  <g>
+    <rect x="72" y="230" width="256" height="200" rx="10" fill="#FDF6F0" stroke="#ECD3C9" stroke-width="1.5"/>
+    <!-- concentric level curves (a hill) -->
+    <g fill="none" stroke="#C9727A">
+      <ellipse cx="148" cy="312" rx="56" ry="40" stroke-width="1.6"/>
+      <ellipse cx="148" cy="312" rx="38" ry="27" stroke-width="1.6"/>
+      <ellipse cx="148" cy="312" rx="20" ry="14" stroke-width="1.6"/>
+    </g>
+    <circle cx="148" cy="312" r="4" fill="#A0404A"/>
+    <text x="148" y="298" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9.5" fill="#A0404A" font-weight="600">max</text>
+    <!-- second hill (min) -->
+    <g fill="none" stroke="#A0404A">
+      <ellipse cx="262" cy="370" rx="44" ry="32" stroke-width="1.6" stroke-dasharray="4 3"/>
+      <ellipse cx="262" cy="370" rx="26" ry="19" stroke-width="1.6" stroke-dasharray="4 3"/>
+    </g>
+    <circle cx="262" cy="370" r="4" fill="#A0404A"/>
+    <text x="262" y="358" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9.5" fill="#A0404A" font-weight="600">min</text>
+    <!-- saddle marker -->
+    <g stroke="#7A5C60" stroke-width="1.4" fill="none">
+      <path d="M198 336 q12 8 26 -2"/>
+      <path d="M206 350 q10 -8 22 2"/>
+    </g>
+    <circle cx="212" cy="344" r="4" fill="#2C1A1D"/>
+    <text x="232" y="332" font-family="Inter, system-ui, sans-serif" font-size="9.5" fill="#2C1A1D" font-weight="600">sella</text>
+  </g>
+  <text x="220" y="454" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#A0404A">Linee di livello</text>
+
+  <g font-family="Inter, system-ui, sans-serif" font-size="12" fill="#7A5C60" text-anchor="middle">
+    <text x="220" y="486">Dominio della funzione</text>
+    <text x="220" y="510">Disequazioni e sistemi</text>
+    <text x="220" y="534">in due variabili</text>
+  </g>
+  <g font-family="Inter, system-ui, sans-serif" font-size="11.5" font-weight="600">
+    <g><rect x="92" y="556" width="100" height="30" rx="15" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/><text x="142" y="576" text-anchor="middle" fill="#A0404A">Massimi</text></g>
+    <g><rect x="200" y="556" width="92" height="30" rx="15" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/><text x="246" y="576" text-anchor="middle" fill="#A0404A">Minimi</text></g>
+    <g><rect x="148" y="596" width="96" height="30" rx="15" fill="#C9727A"/><text x="196" y="616" text-anchor="middle" fill="#fff">Selle</text></g>
+  </g>
+
+  <!-- ============ PANEL 2: INTEGRALI ============ -->
+  <g filter="url(#soft)"><rect x="420" y="150" width="360" height="500" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <text x="600" y="190" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="700" fill="#A0404A">Integrali</text>
+
+  <!-- area under curve -->
+  <g>
+    <rect x="452" y="212" width="296" height="200" rx="10" fill="#FDF6F0" stroke="#ECD3C9" stroke-width="1.5"/>
+    <line x1="478" y1="392" x2="724" y2="392" stroke="#7A5C60" stroke-width="1.5"/>
+    <line x1="478" y1="392" x2="478" y2="228" stroke="#7A5C60" stroke-width="1.5"/>
+    <!-- curve + filled area between a and b (shared top path) -->
+    <path d="M510 392 L510 350 Q570 252 620 312 Q680 384 710 286 L710 392 Z" fill="url(#area)"/>
+    <path d="M488 366 Q500 356 510 350 Q570 252 620 312 Q680 384 710 286 Q720 268 724 262" fill="none" stroke="#A0404A" stroke-width="2.5"/>
+    <line x1="510" y1="392" x2="510" y2="398" stroke="#7A5C60" stroke-width="1.5"/>
+    <line x1="710" y1="392" x2="710" y2="398" stroke="#7A5C60" stroke-width="1.5"/>
+    <text x="510" y="412" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#7A5C60">a</text>
+    <text x="710" y="412" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#7A5C60">b</text>
+    <text x="606" y="378" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#A0404A" font-weight="600">area sottesa</text>
+  </g>
+
+  <!-- fundamental theorem formula -->
+  <g>
+    <rect x="452" y="430" width="296" height="46" rx="10" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/>
+    <text x="600" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#A0404A" font-style="italic">&#8747;&#7488;&#7506; f(x) dx = F(b) &#8722; F(a)</text>
+  </g>
+  <text x="600" y="498" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#A0404A">Teorema fondamentale del calcolo</text>
+
+  <g font-family="Inter, system-ui, sans-serif" font-size="11.5" fill="#7A5C60" text-anchor="middle">
+    <text x="600" y="528">Indefiniti: primitive &#183; per parti</text>
+    <text x="600" y="550">funzioni razionali fratte</text>
+    <text x="600" y="572">Definiti: aree &#183; area tra curve</text>
+    <text x="600" y="594">Integrali impropri</text>
+  </g>
+  <g font-family="'Courier New', monospace" font-size="14" font-weight="700">
+    <g><rect x="470" y="608" width="80" height="28" rx="14" fill="#F4DDD3"/><text x="510" y="627" text-anchor="middle" fill="#A0404A">&#8747; f dx</text></g>
+    <g><rect x="560" y="608" width="80" height="28" rx="14" fill="#F4DDD3"/><text x="600" y="627" text-anchor="middle" fill="#A0404A">primitiva</text></g>
+    <g><rect x="650" y="608" width="80" height="28" rx="14" fill="#F4DDD3"/><text x="690" y="627" text-anchor="middle" fill="#A0404A">aree</text></g>
+  </g>
+
+  <!-- ============ PANEL 3: COMBINATORIA & PROBABILITA ============ -->
+  <g filter="url(#soft)"><rect x="800" y="150" width="360" height="500" rx="18" fill="url(#panel)" stroke="#ECD3C9" stroke-width="2"/></g>
+  <text x="980" y="190" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="700" fill="#A0404A">Combinatoria &amp; Probabilità</text>
+
+  <!-- combinatorics block -->
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="980" y="220" text-anchor="middle" font-size="13" font-weight="600" fill="#A0404A">Calcolo combinatorio</text>
+    <g font-family="Georgia, serif" font-size="15">
+      <g><rect x="828" y="232" width="68" height="34" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/><text x="862" y="255" text-anchor="middle" fill="#A0404A">n!</text></g>
+      <g><rect x="906" y="232" width="68" height="34" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/><text x="940" y="255" text-anchor="middle" fill="#A0404A" font-size="13">C(n,k)</text></g>
+      <g><rect x="984" y="232" width="72" height="34" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/><text x="1020" y="255" text-anchor="middle" fill="#A0404A" font-size="13">D(n,k)</text></g>
+      <g><rect x="1066" y="232" width="64" height="34" rx="8" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.5"/><text x="1098" y="254" text-anchor="middle" fill="#A0404A" font-size="13">P&#8345;</text></g>
+    </g>
+    <text x="980" y="286" text-anchor="middle" font-size="10.5" fill="#7A5C60">fattoriale &#183; coeff. binomiale &#183; permutazioni</text>
+    <text x="980" y="302" text-anchor="middle" font-size="10.5" fill="#7A5C60">disposizioni e combinazioni (semplici / ripetizione)</text>
+  </g>
+
+  <!-- probability: dice + venn -->
+  <g>
+    <line x1="828" y1="320" x2="1132" y2="320" stroke="#ECD3C9" stroke-width="1.5"/>
+    <text x="980" y="346" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#A0404A">Probabilità</text>
+    <!-- venn diagram union/intersection -->
+    <g>
+      <circle cx="906" cy="408" r="40" fill="#C9727A" fill-opacity="0.35" stroke="#C9727A" stroke-width="1.6"/>
+      <circle cx="952" cy="408" r="40" fill="#A0404A" fill-opacity="0.35" stroke="#A0404A" stroke-width="1.6"/>
+      <text x="884" y="412" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#A0404A" font-weight="700">A</text>
+      <text x="974" y="412" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#A0404A" font-weight="700">B</text>
+      <text x="929" y="466" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#7A5C60">A &#8745; B &#183; A &#8746; B</text>
+    </g>
+    <!-- die -->
+    <g>
+      <rect x="1024" y="378" width="64" height="64" rx="12" fill="#FDF6F0" stroke="#A0404A" stroke-width="2"/>
+      <g fill="#A0404A"><circle cx="1042" cy="396" r="5"/><circle cx="1070" cy="396" r="5"/><circle cx="1056" cy="410" r="5"/><circle cx="1042" cy="424" r="5"/><circle cx="1070" cy="424" r="5"/></g>
+      <text x="1056" y="462" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#7A5C60">eventi</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, system-ui, sans-serif" font-size="11" fill="#7A5C60" text-anchor="middle">
+    <text x="980" y="500">Classica &#183; frequentistica &#183; soggettiva &#183; assiomatica</text>
+    <text x="980" y="520">Probabilità condizionata &#183; probabilità totali</text>
+  </g>
+
+  <!-- Bayes highlight -->
+  <g>
+    <rect x="852" y="540" width="256" height="60" rx="12" fill="#FAE8E0" stroke="#C9727A" stroke-width="1.8"/>
+    <text x="980" y="562" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12.5" font-weight="700" fill="#A0404A">Formula di Bayes</text>
+    <text x="980" y="588" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-style="italic" fill="#A0404A">P(A|B) = P(B|A)&#183;P(A) / P(B)</text>
+  </g>
+  <text x="980" y="624" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#7A5C60">La mia parte preferita del programma</text>
+</svg>

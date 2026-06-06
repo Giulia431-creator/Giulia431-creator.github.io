@@ -64,4 +64,47 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  /* ---- Lightbox galleria (zoom a schermo intero) ---- */
+  const galleries = document.querySelectorAll(".gallery, .collage");
+  if (galleries.length > 0) {
+    const overlay = document.createElement("div");
+    overlay.className = "lightbox";
+    overlay.setAttribute("aria-hidden", "true");
+    overlay.innerHTML =
+      '<button class="lightbox__close" type="button" aria-label="Chiudi">&times;</button>' +
+      '<img class="lightbox__img" src="" alt="">';
+    document.body.appendChild(overlay);
+
+    const lbImg = overlay.querySelector(".lightbox__img");
+
+    const openLightbox = (src, alt) => {
+      lbImg.src = src;
+      lbImg.alt = alt || "";
+      overlay.classList.add("is-open");
+      overlay.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    };
+
+    const closeLightbox = () => {
+      overlay.classList.remove("is-open");
+      overlay.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      lbImg.src = "";
+    };
+
+    galleries.forEach((gallery) => {
+      gallery.addEventListener("click", (e) => {
+        const img = e.target.closest("img");
+        if (img && gallery.contains(img)) {
+          openLightbox(img.currentSrc || img.src, img.alt);
+        }
+      });
+    });
+
+    overlay.addEventListener("click", closeLightbox);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeLightbox();
+    });
+  }
 });
